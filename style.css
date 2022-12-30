@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap'); /*--- import font externa ---*/
+
+*{ /*--- configs universair ---*/
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Prosto One', cursive;
+    color: #2f363d;
+}
+
+body{
+    background-color: #5B6773;
+    margin: 5% auto;
+}
+
+#container{ /*--- container conteudo geral da pagina ---*/
+    margin: auto;
+    width: 300px
+}
+
+#tela-inicial{ /*--- tela inicial pré cadastro/login ---*/
+    text-align: center;
+    background-color: #8394A6;
+    width: 300px;
+    margin: auto;
+    padding-top: 50px;
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#tela-inicial > h1{ /*--- titulo h1 da tela inicial ---*/
+    font-size: 2em;
+}
+
+.selecionar-entrada{ /*--- div botões para selecionar cadastro ou login ---*/
+    padding: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 40%;
+}
+
+.botao-tela-inicial{ /*--- botões seleção cadastro ou login ---*/
+    padding: 2px;
+    color: #2f363d;
+    background-color: #5C8CC0;
+    border-radius: 10px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+    font-size: 0.7em;
+}
+
+.botao-tela-inicial:hover{
+    color: #5C8CC0;
+    background-color: #2f363d;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+#form-cadastro{ /*--- tela de cadastro ---*/
+    display: none;
+    text-align: center;
+    background-color: #8394A6;
+    width: 300px;
+    margin: auto;
+    padding-top: 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#form-cadastro > form{ /*--- formulario da tela de cadastro ---*/
+    padding: 10px;
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-rows: auto;
+}
+
+.cadastro-usuario, .cadastro-email, .cadastro-senha, .cadastro-confirmar-senha{ /*--- inputs de textos dos cadastro---*/
+    margin: 5px 0px;
+}
+
+#usuario-cadastro, #email-cadastro, #senha-cadastro, #confirmar-senha-cadastro{ /*--- area de texto dos inputs de cadastro---*/
+    font-family: 'Prosto One', cursive;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#confirmar-cadastro, #login-cadastro{ /*--- botão submit formulario de confirmação de cadastro e login ---*/
+    width: 70%;
+    padding: 2px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#confirmar-cadastro:hover, #login-cadastro:hover{
+    color: #5C8CC0;
+    background-color: #2f363d;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.voltar-login, .voltar-cadastro{ /*--- botão voltar para a tela inicial ---*/
+    position: relative;
+    top: -55px;
+    left: -30px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+.voltar-login:hover, .voltar-cadastro:hover{
+    color: #5C8CC0;
+    background-color: #2f363d;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+#form-login{ /*--- tela de login ---*/
+    display: none;
+    text-align: center;
+    background-color: #8394A6;
+    width: 300px;
+    margin: auto;
+    padding-top: 30px;
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#form-login > form{ /*--- formulario de login ---*/
+    padding: 10px;
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-rows: auto;
+}
+
+.login-usuario, .login-email, .login-senha{ /*--- inputs de login de usuario ---*/
+    margin: 5px 0px;
+}
+
+#usuario-login, #email-login, #senha-login{ /*--- area de texto dos inputs de login de usuario ---*/
+    font-family: 'Prosto One', cursive;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+.sucesso{ /*--- classe adcionada por javascript caso sucesso nos inputs ---*/
+    border-color: green !important;
+} 
+.erro{ /*--- classe adcionada por javascript caso erro nos inputs ---*/
+    border-color: rgba(228, 11, 11, 0.678) !important;
+}
+
+span{ /*--- texto de alerta de erro nos inputs ---*/
+    font-size: 0.75em;
+    display: block;
+    color: rgba(228, 11, 11, 0.678);
+    text-align: left;
+    text-indent: 15px;
+}
+
+p{ /*--- texto após usuário cadastrado ou logado ---*/
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#LogOut{ /*--- botão de logout ---*/
+    display: none;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-color: #5B6774;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.205);
+}
+
+#LogOut:hover{
+    color: #5C8CC0;
+    background-color: #2f363d;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}

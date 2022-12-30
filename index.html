@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- arquivo CSS externo -->
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <main id="container"> <!-- conteudo da pagina -->
+        
+        <section id="tela-inicial"> <!-- tela inicial sem login ou cadastro -->
+            
+            <h1>Bem Vindo!</h1>
+
+            <form action="tela-inicial" id="inicio"> <!-- form tela inicial -->
+
+                <div class="selecionar-entrada">
+
+                    <label for="cadastro">Novo Usuário</label><!-- botao cadastro -->
+                    <input type="button" value="Realizar cadastro" id="realizar-cadastro" class="botao-tela-inicial">
+
+                    <label for="login">Já possuo uma conta</label> <!-- botao login -->
+                    <input type="button" value="Realizar login" id="realizar-login" class="botao-tela-inicial">
+
+                </div>
+
+            </form>
+            
+            <p id="text"></p> <!-- texto usuario logado -->
+            <button id="LogOut">Sair</button> <!-- botao logout --> 
+
+        </section>
+
+        <section id="form-cadastro"> <!-- tela formulario cadastro -->
+            
+            <h1>Cadastro</h1>
+            
+            <form action="cadastro" id="cadastro"> <!-- formulario cadastro -->
+
+                <input type="button" value="&larr;" class="voltar-cadastro"> <!-- botao tela inicial -->
+
+                <div class="cadastro-usuario"> <!-- cadastrar nome de usuário --> 
+                    
+                    <label for="usuario-cadastro">Nome de usuario</label>
+                    <input type="text" id="usuario-cadastro">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <div class="cadastro-email"> <!-- cadastrar email -->
+                    
+                    <label for="email-cadastro">Email</label>
+                    <input type="text" id="email-cadastro">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <div class="cadastro-senha"> <!-- cadastrar senha -->
+
+                    <label for="senha-cadastro">Senha</label>
+                    <input type="password" id="senha-cadastro">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <div class="cadastro-confirmar-senha"> <!-- confirmar senha -->
+
+                    <label for="confirmar-senha-cadastro">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha-cadastro">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <input type="submit" id="confirmar-cadastro" value="Confirmar"> <!-- botao submit formulario --> 
+
+            </form>
+
+        </section>
+
+        <section id="form-login"> <!-- tela formulario login -->
+
+            <h1>Login</h1>
+            
+            <form action="login" id="login"> <!-- formulario login -->
+                
+                <input type="button" value="&larr;" class="voltar-login"> <!-- botao tela inicial -->
+
+                <div class="login-usuario"> <!-- logar nome de usuário -->
+                    
+                    <label for="usuario-login">Nome de usuario</label> 
+                    <input type="text" id="usuario-login">
+                    <span></span> <!-- texto erro de cadastro --> 
+                    
+                </div>
+
+                <div class="login-email"> <!-- login email -->
+                    
+                    <label for="email-login">Email</label>
+                    <input type="text" id="email-login">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <div class="login-senha"> <!-- logar senha do usuário -->
+
+                    <label for="senha-login">Senha</label>
+                    <input type="password" id="senha-login">
+                    <span></span> <!-- texto erro de cadastro --> 
+
+                </div>
+
+                <input type="submit" id="login-cadastro" value="Confirmar"> <!-- botao submit formulario --> 
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="code.js"></script> <!-- arquivo JS externo -->
+
+</body>
+</html>
